@@ -28,8 +28,7 @@ This repository evaluates the performance of GPT-4V(ision) on various OCR-relate
 <h2>Visual Information Extraction</h2>
 
 <div>
-    <a href="results/results_vie.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_vie"></a>
-    <a href="scr/src_vie.md"><img src="https://img.shields.io/badge/Evaluation-🎚️ Strategy-purple" alt="src_vie"></a>
+    <a href="results/vie/results_vie.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_vie"></a>
     <a href="https://github.com/SCUT-DLVCLab/Document-AI-Recommendations/tree/main"><img src="https://img.shields.io/badge/Resource-🧷Collections-orange" alt="recommendations_vie"></a>
 </div>
 
