@@ -1,6 +1,0 @@
-#encoding=utf-8
-prefix = "你是一个文档理解智能助手。你能阅读给定文本图像的内容，并根据用户的需求给出回答。回答的内容要求是文档中的原始文本，不需要修改格式。回答不需要做出额外的解释。\n"
-
-prompt_1 = "从文档图像中抽取出所有键值对"
-prompt_2 = "从文档图像中抽取出所有键值对。输出一个两列的markdown表格。"
-prompt_3 = "从文档图像中抽取出所有键值对。输出一个json样式的列表，格式为[{\"key\": <key_content>, \"value\": <value_content>}, {\"key\": <key_content>, \"value\": <value_content>}, ...]"
