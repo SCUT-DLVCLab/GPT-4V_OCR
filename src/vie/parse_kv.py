@@ -4,9 +4,12 @@ import json
 import re
 from typing import Dict, List, Tuple, Union
 
+import numpy as np
+import tqdm
+
 from src.common.string_utils import string_f2h
 
-SEPARATOR_LIST = [":", "-"]  # should be ordered
+SEPARATOR_LIST = ["->", ":", "-"]  # should be ordered
 BRACKET_MAP = {
     ")": "(",
     "]": "[",
@@ -20,6 +23,43 @@ UNSELECTED_CHILD = [
     "unchecked",
     "unselected",
 ]
+
+
+def calculate_edit_distance(str1: str, str2: str) -> int:
+    if str1 == str2:
+        return 0
+
+    wl_1 = len(str1)
+    wl_2 = len(str2)
+
+    if wl_1 == 0 or wl_2 == 0:
+        return max(wl_1, wl_2)
+
+    v1, v2 = [], []
+    for i in range(wl_2 + 1):
+        v1.append(i), v2.append(i + 1)
+
+    for i in range(1, wl_1 + 1):
+        for j in range(1, wl_2 + 1):
+            if str1[i - 1] == str2[j - 1]:
+                d = 0
+
+            else:
+                d = 1
+
+            minValue = min(
+                v1[j] + 1,
+                v1[j - 1] + d,
+                v2[j - 1] + 1,
+            )
+
+            v2[j] = minValue
+
+        for j in range(wl_2 + 1):
+            v1[j] = v2[j]
+            v2[j] = i + 1
+
+    return float(v1[-1]) / max(len(str1), len(str2))
 
 
 def parse_dummy_json(dir_orig: str) -> Dict[str, List[str]]:
@@ -127,6 +167,7 @@ def parse_dummy_json(dir_orig: str) -> Dict[str, List[str]]:
 def parse_single_line(line: str) -> Union[List[Tuple[str, str]], None]:
     parsed_pairs = []
     processed = False
+
     for outer_separator in SEPARATOR_LIST:
         match_separators = re.findall(r"s?" + outer_separator + r"s?", line)
         if len(match_separators) == 1:
@@ -359,6 +400,9 @@ if __name__ == "__main__":
 
     # @dataclasses.dataclass
     # class DebugArgs:
+    #     dir_orig: str = "results/vie/private_XFUNDzh_res.json"
+    #     dir_gt_kv: str = "private_eval/FUNSD/zh.val.kv.json"
+    #     dir_rename: str = "private_eval/FUNSD/XFUNDzh_rename.txt"
     #     dir_orig: str = "results/vie/private_FUNSD_res.json"
     #     dir_gt_kv: str = "private_eval/FUNSD/en.val.kv.json"
     #     dir_rename: str = "private_eval/FUNSD/FUNSD_rename.txt"
@@ -378,19 +422,23 @@ if __name__ == "__main__":
 
     gt_kv_map = json.load(open(args.dir_gt_kv, "r", encoding="utf-8"))
 
-    parsed_dict = parse_dummy_json(args.dir_orig)
+    pred_dict = parse_dummy_json(args.dir_orig)
 
     num_TP, num_pred, num_gt = 0.0, 0.0, 0.0
-    for renamed_file_id, file_content in parsed_dict.items():
+    total_ed = 0.0
+    total_ed_cnt = 0.0
+    for renamed_file_id, file_content in tqdm.tqdm(pred_dict.items()):
         if rename_maps is not None:
             orig_file_id = rename_maps[str(renamed_file_id)]
         else:
             orig_file_id = renamed_file_id
-        parsed_kvs = parse_single_file_content(file_content)
+        pred_kvs = parse_single_file_content(file_content)
         gt_kvs = gt_kv_map[orig_file_id]
         gt_kvs_ = []
         for gt_kv in gt_kvs:
             k, v = gt_kv
+            k = k.replace("\u2611", "").strip()
+            v = v.replace("\u2611", "").strip()
             if k.endswith(":"):
                 k = k[:-1]
 
@@ -400,12 +448,44 @@ if __name__ == "__main__":
             gt_kvs_.append((k, v))
         gt_kvs = gt_kvs_
 
-        num_pred += len(parsed_kvs)
+        num_pred += len(pred_kvs)
         num_gt += len(gt_kvs)
 
-        for parsed_kv in parsed_kvs:
-            if parsed_kv in gt_kvs:
+        # calculate F1
+        for pred_kv in pred_kvs:
+            if pred_kv in gt_kvs:
                 num_TP += 1
+
+        matched_pred = []
+        for i, gt_kv in enumerate(gt_kvs):
+            gt_ed_score_list = []
+            gt_pred_idx_list = []
+            for j, pred_kv in enumerate(pred_kvs):
+                if j in matched_pred:
+                    continue
+
+                pred_k, pred_v = pred_kv
+                gt_k, gt_v = gt_kv
+
+                ed = calculate_edit_distance(pred_k + pred_v, gt_k + gt_v)
+
+                gt_ed_score_list.append(int(ed * 1000))
+                gt_pred_idx_list.append(j)
+
+            if len(gt_ed_score_list) == 0:
+                break
+
+            match_pred_idx = gt_pred_idx_list[np.argmin(gt_ed_score_list)]
+            matched_pred.append(match_pred_idx)
+            match_ed = np.min(gt_ed_score_list) / 1000.0
+            total_ed += match_ed
+
+        if len(pred_kvs) > len(gt_kvs):
+            total_ed += len(pred_kvs) - len(gt_kvs)
+        else:
+            total_ed += len(gt_kvs) - len(pred_kvs)
+
+        total_ed_cnt += max(len(pred_kvs), len(gt_kvs))
 
     precision = num_TP / num_pred if num_pred > 0 else 0
     recall = num_TP / num_gt if num_gt > 0 else 0
@@ -414,3 +494,8 @@ if __name__ == "__main__":
     print(f"Precision: {precision:.4f}")
     print(f"Recall: {recall:.4f}")
     print(f"F1: {f1:.4f}")
+
+    ned = total_ed / total_ed_cnt
+    minus_ned = 1 - ned
+    print(f"NED: {ned:.4f}")
+    print(f"1-NED: {minus_ned:.4f}")
