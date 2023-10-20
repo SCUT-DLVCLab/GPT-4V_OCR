@@ -17,13 +17,13 @@
 
 # Results
 - Results of IAM
-    |  Dataset   | WER↓ (%\%) | CER↓ (%\%) |
+    |  Dataset   | WER↓ (% | CER↓ (%) |
     | :--------: | :---------: | :---------: |
     | IAM (page) |    9.84     |    3.32     |
     | IAM (line) |    33.42    |    13.75    |
 
 - Results of CASIA-HWDB
-    |      Dataset      | AR↑ (%\%) | CR↑ (%\%) |
+    |      Dataset      | AR↑ (%) | CR↑ (%) |
     | :---------------: | :--------: | :--------: |
     | CASIA-HWDB (page) |    0.97    |   36.54    |
     | CASIA-HWDB (line) |   -3.45    |   11.85    |
