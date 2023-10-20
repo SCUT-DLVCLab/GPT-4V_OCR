@@ -34,4 +34,4 @@
 
  - Examples of error cases of the SER task. 
     The text content enclosed within the red box is incorrectly identified as a header entity
-    ![0](./ser_visualization_00.jpg)
+    ![0](ser_visualization_00.jpg)
