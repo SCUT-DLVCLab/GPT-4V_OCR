@@ -17,7 +17,7 @@
 
 # Results
 - Results of IAM
-    |  Dataset   | WER↓ (% | CER↓ (%) |
+    |  Dataset   | WER↓ (%) | CER↓ (%) |
     | :--------: | :---------: | :---------: |
     | IAM (page) |    9.84     |    3.32     |
     | IAM (line) |    33.42    |    13.75    |
