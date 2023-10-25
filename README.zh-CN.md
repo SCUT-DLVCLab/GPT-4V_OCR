@@ -31,7 +31,7 @@
 <h2>视觉信息抽取</h2>
 
 <div>
-    <a href="results/vie/results_vie.md"><img src="https://img.shields.io/badge/评测结果-🗒️-blue" alt="results_vie"></a>
+    <a href="results/vie/result_vie.md"><img src="https://img.shields.io/badge/评测结果-🗒️-blue" alt="results_vie"></a>
     <!-- <a href="scr/src_vie.md"><img src="https://img.shields.io/badge/评测方案-🎚️-purple" alt="src_vie"></a> -->
     <a href="https://github.com/SCUT-DLVCLab/Document-AI-Recommendations/tree/main"><img src="https://img.shields.io/badge/资源整理-🧷-orange" alt="recommendations_vie"></a>
 </div>
