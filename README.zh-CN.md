@@ -22,11 +22,17 @@
 <h2>场景文本识别</h2>
 <a href="results/str/results_str.md"><img src="https://img.shields.io/badge/评测结果-🗒️-blue" alt="results_vie"></a>
 
+场景文字识别（Scene Text Recognition，STR）旨在识别自然场景图片中的文字信息。
+
 <h2>手写文本识别</h2>
 <a href="results/htr/result_htr.md"><img src="https://img.shields.io/badge/评测结果-🗒️-blue" alt="results_vie"></a>
 
+手写文本识别（Handwritten Text Recognition，HTR）旨在识别手写体文字。
+
 <h2>手写数学公式识别</h2>
 <a href="results/hmer/results_hmer.md"><img src="https://img.shields.io/badge/评测结果-🗒️-blue" alt="results_vie"></a>
+
+手写数学公式识别（Handwritten Mathematical Expression Recognition，HMER）旨在识别手写数学公式。例如，给定一张手写公式图像，HMER算法将会把图像转换为latex格式。
 
 <h2>视觉信息抽取</h2>
 

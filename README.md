@@ -27,11 +27,15 @@ This repository evaluates the performance of GPT-4V(ision) on various OCR-relate
 <h2>Handwritten Text Recognition</h2>
 <div>
     <a href="results/htr/result_htr.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_vie"></a>
+
+Handwritten Text Recognition (HTR) aims to recognize handwritten text.
 </div>
 
 <h2>Handwritten Mathematical Expression Recognition</h2>
 <div>
     <a href="results/hmer/results_hmer.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_vie"></a>
+
+Handwritten Mathematical Expression Recognition (HMER) aims to recognize handwritten mathematical formulas.
 </div>
 
 <h2>Visual Information Extraction</h2>
