@@ -10,9 +10,9 @@
   <a href=""><img src="https://img.shields.io/github/issues/{SCUT-DLVCLab}/{GPT4OCR}.svg"></a>
   <a href=""><img src="https://img.shields.io/github/issues-pr/{SCUT-DLVCLab}/{GPT4OCR}.svg"></a> -->
 
-<div align="center">
 
-[English](README.md) | [简体中文](README.zh-CN.md)
+
+<!-- [English](README.md) | [简体中文](README.zh-CN.md) -->
 
 </div>
 
