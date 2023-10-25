@@ -23,26 +23,31 @@
     ```
 
 # Results
-- Results of word-level scene text recognition.
-  
-    |   Dataset    | WA↑(%) | WAI↑(%) |
-    | :----------: | :----: | :-----: |
-    |    CUTE80    |   20   |   88    |
-    | SCUT-CTW1500 |   58   |   62    |
-    |  Total-Text  |   56   |   60    |
-    |   WordArt    |   56   |   60    |
-    |    ReCTS     |   0    |    0    |
+- Results of word-level secne text recognition.
+   |     Method      | CUTE80 | SCUT-CTW1500 | Total-Text | WordArt | ReCTS |
+   | :-------------: | :----: | :----------: | :--------: | :-----: | :---: |
+   |     GPT-4V      | 88.0%  |    62.0%     |   66.0%    |  62.0%  |   0   |
+   | Supervised-SOTA | 98.6%  |    87.0%     |   90.1%    |  68.2%  | 94.0% |
 
- - Results of MLT19.
-    | Language | Precision↑(%) | Precision IC↑ (%) | Recall↑ (%) | Recall IC↑ (%) |
-    | :------: | :-----------: | :---------------: | :---------: | :------------: |
-    |  Arabic  |     17.76     |       17.76       |    18.18    |     18.18      |
-    | English  |     86.96     |       93.48       |    79.33    |     86.67      |
-    |  French  |     83.50     |       85.44       |    84.31    |     86.27      |
-    | Chinese  |     1.14      |       1.14        |    1.49     |      1.49      |
-    |  German  |     72.73     |       75.97       |    85.27    |     89.15      |
-    |  Korean  |     10.40     |       10.40       |    12.17    |     12.17      |
-    | Japanese |     11.49     |       11.49       |    11.63    |     11.63      |
-    | Italian  |     63.06     |       65.61       |    67.87    |     70.04      |
-    |  Bangla  |     2.44      |       2.44        |    2.60     |      2.60      |
-    |  Hindi   |     7.07      |       7.07        |    8.08     |      8.08      |
+- Results of MLT19.
+   | Language | Precision ↑ | Recall ↑ |  F1 ↑  |
+   | :------: | :---------: | :------: | :----: |
+   |  Arabic  |   17.76%    |  18.18%  | 17.97% |
+   | English  |   86.96%    |  79.33%  | 82.97% |
+   |  French  |    83.5%    |  84.31%  | 83.9%  |
+   | Chinese  |    1.14%    |  1.49%   | 1.29%  |
+   |  German  |   72.73%    |  85.27%  | 78.5%  |
+   |  Korean  |    10.4%    |  12.17%  | 11.22% |
+   | Japanese |   11.49%    |  11.63%  | 11.56% |
+   | Italian  |   63.06%    |  67.87%  | 65.38% |
+   |  Bangla  |    2.44%    |   2.6%   | 2.52%  |
+   |  Hindi   |    7.07%    |  8.08%   | 7.54%  |
+
+- Impact of image resolution for recognition performance on MLT19 English subset.
+   | Image size | Precision ↑ | Recall ↑ |  F1 ↑  |
+   | :--------: | :---------: | :------: | :----: |
+   |    128     |   47.10%    |  58.88%  | 52.34% |
+   |    256     |   74.64%    |  86.67%  | 80.21% |
+   |    512     |   86.23%    |  83.69%  | 84.94% |
+   |    1024    |   90.58%    |  85.14%  | 87.78% |
+   |    2048    |   92.75%    |  89.12%  | 89.46% |
