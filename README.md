@@ -55,6 +55,6 @@ To learn more about Table Structure Recognition, please refer to [Document-AI-Re
 
 Table Structure Recognition(TSR) aims to recognize the cellular structures of tables from table images by extracting the coordinates of cell boxes and row/column spanning information. This task is very challenging since tables may have complex structures, diverse styles and contents, and become geometrically distorted or even curved during an image capturing process.
 
-<h2>Layout Analysis</h2>
+<!-- <h2>Layout Analysis</h2> -->
 
 </div>
