@@ -1,14 +1,15 @@
 # GPT4OCR
 
-<div align="left">
+<div align="center">
   <p>
-      <img width="50%" src="images/DLVC.png"></a>
+      <!-- <h1>GPT4OCR</h1> -->
+      <img width="25%" src="images/DLVC.png"></a>
   </p>
 
   <!-- <a href=""><img src="https://img.shields.io/github/stars/{SCUT-DLVCLab}/{GPT4OCR}.svg"></a>
   <a href=""><img src="https://img.shields.io/github/issues/{SCUT-DLVCLab}/{GPT4OCR}.svg"></a>
   <a href=""><img src="https://img.shields.io/github/issues-pr/{SCUT-DLVCLab}/{GPT4OCR}.svg"></a> -->
-
+<div align="left">
 <!-- [English](README.md) | [简体中文](README.zh-CN.md) -->
 <br>
 
