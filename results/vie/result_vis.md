@@ -21,17 +21,17 @@
 # Results
 - SER Results of FUNSD and XFUND-zh
   
-    | Dataset  | Precision↑ ($\%$) | Recall↑ ($\%$) | F1↑ ($\%$) | 1-NED↑ |
+    | Dataset  | Precision↑ (%) | Recall↑ (%) | F1↑ (%) | 1-NED↑ |
     | :------: | :---------------: | :------------: | :--------: | :----: |
     |  FUNSD   |       41.85       |     29.36      |   34.51    | 0.2697 |
     | XFUND-zh |       25.87       |     15.15      |   19.11    | 0.1544 |
 
  - Pair Extraction Results of FUNSD and XFUND-zh.
-    | Dataset  | Precision↑ ($\%$) | Recall↑ ($\%$) | F1↑ ($\%$) | 1-NED↑ |
+    | Dataset  | Precision↑ (%) | Recall↑ (%) | F1↑ (%) | 1-NED↑ |
     | :------: | :---------------: | :------------: | :--------: | :----: |
     |  FUNSD   |       20.69       |     10.25      |   13.71    | 0.1979 |
     | XFUND-zh |       0.07        |      0.02      |    0.03    | 0.0420 |
 
  - Examples of error cases of the SER task. 
     The text content enclosed within the red box is incorrectly identified as a header entity
-    ![0](./ser_visualization_00.jpg)
+    ![0](ser_visualization_00.jpg)

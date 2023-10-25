@@ -17,17 +17,19 @@
 
 # Results
 - Results of IAM
-    |  Dataset   | WER↓ ($\%$) | CER↓ ($\%$) |
+    |  Dataset   | WER↓ (%) | CER↓ (%) |
     | :--------: | :---------: | :---------: |
     | IAM (page) |    9.84     |    3.32     |
     | IAM (line) |    33.42    |    13.75    |
 
 - Results of CASIA-HWDB
-    |      Dataset      | AR↑ ($\%$) | CR↑ ($\%$) |
+    |      Dataset      | AR↑ (%) | CR↑ (%) |
     | :---------------: | :--------: | :--------: |
     | CASIA-HWDB (page) |    0.97    |   36.54    |
     | CASIA-HWDB (line) |   -3.45    |   11.85    |
 
-  An example of handwritten Chinese text in page-level. In the generated output of GPT-4V, we highlight characters that match the GT in green and characters that do not match in red.
-    ![0](vis_CASIA_page.png)
+ - An example of handwritten Chinese text in page-level.
+   
+   In the generated output of GPT-4V, we highlight characters that match the GT in green and characters that do not match in red.
+    ![0](./vis_CASIA_page.png)
     

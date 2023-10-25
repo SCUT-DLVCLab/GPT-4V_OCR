@@ -12,7 +12,7 @@ Please read the table in this image and return a html-style reconstructed table 
 
 # Results
 
-| Dataset | TEDS-S↑ ($\%$) |
+| Dataset | TEDS-S↑ (%) |
 | :-----: | :------------: |
 | SciTSR  |     87.47      |
 |   WTW   |     25.60      |
