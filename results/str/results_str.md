@@ -55,3 +55,6 @@
    |    512     |   86.23%    |  83.69%  | 84.94% |
    |    1024    |   90.58%    |  85.14%  | 87.78% |
    |    2048    |   92.75%    |  89.12%  | 89.46% |
+
+- Illustration of word-level scene text recognition. In the answers of GPT-4V, we highlight the characters match the GT in green and characters do not match in red. GPT-4V can recognize curved, slanted and artistic English text, while comman-style Chinese text can not be recognized.
+![0](./vis_STR.png)

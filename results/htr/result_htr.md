@@ -76,6 +76,7 @@
         </tr>
     </table>
 
+
  - Illustration of handwritten text recognition. (a), (b), (c), (d) are samples of page-level IAM, line-level IAM, page-level CASIA-HWDB and line-level CASIA-HWDB, respectively. In the responses of GPT-4V, we highlight characters that match the GT in green and characters that do not match in red. For English text, GPT-4V demonstrates excellent performance. In contrast, for Chinese text, GPT-4V has generated a passage of text that is semantically coherent, but it is not associated with the ground truth text (GT).
     ![0](./vis_HTR.png)
     
