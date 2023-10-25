@@ -1,6 +1,6 @@
 # GPT4OCR
 
-<div align="center">
+<div align="left">
   <p>
       <img width="50%" src="images/DLVC.png"></a>
   </p>
@@ -25,21 +25,21 @@ This repository evaluates the performance of GPT-4V(ision) on various OCR-relate
 </div>
 <div align="left">
 Scene Text Recognition (STR) aims to recognize textual information in natural scene pictures.
-<div align="center">
+<div align="left">
 <h2>Handwritten Text Recognition</h2>
 <div>
     <a href="results/htr/result_htr.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_vie"></a>
 <div align="left">
 Handwritten Text Recognition (HTR) aims to recognize handwritten text.
 </div>
-<div align="center">
+<div align="left">
 <h2>Handwritten Mathematical Expression Recognition</h2>
 <div>
     <a href="results/hmer/results_hmer.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_vie"></a>
 <div align="left">
 Handwritten Mathematical Expression Recognition (HMER) aims to recognize handwritten mathematical formulas.
 </div>
-<div align="center">
+<div align="left">
 <h2>Visual Information Extraction</h2>
 
 <div>
@@ -50,7 +50,7 @@ Handwritten Mathematical Expression Recognition (HMER) aims to recognize handwri
 To learn more about Visual Information Extraction, please refer to [Document-AI-Recommendations](https://github.com/SCUT-DLVCLab/Document-AI-Recommendations/tree/main).
 
 Visual Information Extraction(VIE) aims at mining, analyzing, and extracting key fields entities contained in visually rich documents. For example, given an image of a receipt, the VIE algorithms will tell information such as store name, product details, price, etc. For documents like forms, VIE algorithms will tell the key-value pairs contained.
-<div align="center">
+<div align="left">
 <h2>Table Structure Recognition</h2>
 <div>
     <a href="results/tsr/results_tsr.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_vie"></a>

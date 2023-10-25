@@ -1,6 +1,6 @@
 # GPT4OCR
 
-<div align="center">
+<div align="left">
   <p>
       <img width="50%" src="images/DLVC.png"></a>
   </p>
@@ -25,19 +25,19 @@
 <div align="left">
 场景文字识别（Scene Text Recognition，STR）旨在识别自然场景图片中的文字信息。
 
-<div align="center">
+<div align="left">
 <h2>手写文本识别</h2>
 <a href="results/htr/result_htr.md"><img src="https://img.shields.io/badge/评测结果-🗒️-blue" alt="results_vie"></a>
 <div align="left">
 手写文本识别（Handwritten Text Recognition，HTR）旨在识别手写体文字。
 
-<div align="center">
+<div align="left">
 <h2>手写数学公式识别</h2>
 <a href="results/hmer/results_hmer.md"><img src="https://img.shields.io/badge/评测结果-🗒️-blue" alt="results_vie"></a>
 <div align="left">
 手写数学公式识别（Handwritten Mathematical Expression Recognition，HMER）旨在识别手写数学公式。例如，给定一张手写公式图像，HMER算法将会把图像转换为latex格式。
 
-<div align="center">
+<div align="left">
 <h2>视觉信息抽取</h2>
 
 <div>
@@ -50,7 +50,7 @@
 
 
 视觉信息抽取（Visual Information Extraction, VIE）旨在挖掘、分析和提取视觉富文档中包含的关键信息字段。例如，给定一张收据的图像，VIE算法将告诉诸如商店名称、产品详情、价格等信息。对于表格等文档，VIE算法将抽取出其包含的键值对。
-<div align="center">
+<div align="left">
 <h2>表格结构识别</h2>
 <a href="results/tsr/results_tsr.md"><img src="https://img.shields.io/badge/评测结果-🗒️-blue" alt="results_vie"></a>
 <a href="https://github.com/SCUT-DLVCLab/Document-AI-Recommendations/tree/main"><img src="https://img.shields.io/badge/资源整理-🧷-orange" alt="recommendations_vie"></a>
