@@ -33,7 +33,7 @@
 
 <div align="left">
 <h2>手写文本识别</h2>
-<a href="results/htr/result_htr.md"><img src="https://img.shields.io/badge/评测结果-🗒️-blue" alt="results_vie"></a>
+<a href="results/htr/results_htr.md"><img src="https://img.shields.io/badge/评测结果-🗒️-blue" alt="results_vie"></a>
 <div align="left">
 手写文本识别（Handwritten Text Recognition，HTR）旨在识别手写体文字。
 
@@ -65,7 +65,5 @@
 <div align="left">
 
 了解更多关于视觉信息抽取的信息，请参考[Document-AI-Recommendations](https://github.com/SCUT-DLVCLab/Document-AI-Recommendations/tree/main).
-
-<!-- <h2>版面分析</h2> -->
 
 </div>

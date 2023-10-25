@@ -35,7 +35,7 @@ Scene Text Recognition (STR) aims to recognize textual information in natural sc
 <div align="left">
 <h2>Handwritten Text Recognition</h2>
 <div>
-    <a href="results/htr/result_htr.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_vie"></a>
+    <a href="results/htr/results_htr.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_vie"></a>
 <div align="left">
 Handwritten Text Recognition (HTR) aims to recognize handwritten text.
 </div>
