@@ -1,4 +1,4 @@
-# GPT4OCR
+# GPT-4V_OCR
 
 <div align="center">
   <p>
