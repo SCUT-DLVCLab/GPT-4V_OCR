@@ -27,7 +27,7 @@ This repository evaluates the performance of GPT-4V(ision) on various OCR-relate
 
 <h2>Scene Text Recognition</h2>
 <div>
-    <a href="results/str/results_str.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_vie"></a>
+    <a href="results/str/results_str.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_str"></a>
 </div>
 <div align="left">
 Scene Text Recognition (STR) aims to recognize textual information in natural scene pictures.
@@ -35,14 +35,14 @@ Scene Text Recognition (STR) aims to recognize textual information in natural sc
 <div align="left">
 <h2>Handwritten Text Recognition</h2>
 <div>
-    <a href="results/htr/results_htr.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_vie"></a>
+    <a href="results/htr/results_htr.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_htr"></a>
 <div align="left">
 Handwritten Text Recognition (HTR) aims to recognize handwritten text.
 </div>
 <div align="left">
 <h2>Handwritten Mathematical Expression Recognition</h2>
 <div>
-    <a href="results/hmer/results_hmer.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_vie"></a>
+    <a href="results/hmer/results_hmer.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_hmer"></a>
 <div align="left">
 Handwritten Mathematical Expression Recognition (HMER) aims to recognize handwritten mathematical formulas.
 </div>
@@ -62,7 +62,7 @@ Visual Information Extraction(VIE) aims at mining, analyzing, and extracting key
 <div align="left">
 <h2>Table Structure Recognition</h2>
 <div>
-    <a href="results/tsr/results_tsr.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_vie"></a>
+    <a href="results/tsr/results_tsr.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_tsr"></a>
     <a href="https://github.com/SCUT-DLVCLab/Document-AI-Recommendations/tree/main"><img src="https://img.shields.io/badge/Resource-🧷Collections-orange" alt="recommendations_tsr"></a>
 </div>
 <div align="left">
