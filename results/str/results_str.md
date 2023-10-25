@@ -19,7 +19,11 @@
     ```
 - For end-to-end text recognition
     ```
-    What are all the scene text in the image? Do not translate
+    What are all the scene text in the image? Do not translate.
+    ```
+- For ReCTS in Chinese
+    ```
+    图片中的场景文字是什么？
     ```
 
 # Results

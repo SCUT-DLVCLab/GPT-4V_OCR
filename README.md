@@ -37,6 +37,14 @@ To learn more about Visual Information Extraction, please refer to [Document-AI-
 Visual Information Extraction(VIE) aims at mining, analyzing, and extracting key fields entities contained in visually rich documents. For example, given an image of a receipt, the VIE algorithms will tell information such as store name, product details, price, etc. For documents like forms, VIE algorithms will tell the key-value pairs contained.
 
 <h2>Table Structure Recognition</h2>
+<div>
+    <a href="results/vie/result_vie.md"><img src="https://img.shields.io/badge/Evaluation- 🗒️Results-blue" alt="results_vie"></a>
+    <a href="https://github.com/SCUT-DLVCLab/Document-AI-Recommendations/tree/main"><img src="https://img.shields.io/badge/Resource-🧷Collections-orange" alt="recommendations_vie"></a>
+</div>
+
+To learn more about Table Structure Recognition, please refer to [Document-AI-Recommendations](https://github.com/SCUT-DLVCLab/Document-AI-Recommendations/tree/main).
+
+Table Structure Recognition(TSR) aims to recognize the cellular structures of tables from table images by extracting the coordinates of cell boxes and row/column spanning information. This task is very challenging since tables may have complex structures, diverse styles and contents, and become geometrically distorted or even curved during an image capturing process.
 
 <h2>Layout Analysis</h2>
 
