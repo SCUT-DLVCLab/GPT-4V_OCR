@@ -5,11 +5,11 @@
       <img width="50%" src="images/DLVC.png"></a>
   </p>
 
-  <a href=""><img src="https://img.shields.io/github/stars/{SCUT-DLVCLab}/{GPT4OCR}.svg"></a>
+  <!-- <a href=""><img src="https://img.shields.io/github/stars/{SCUT-DLVCLab}/{GPT4OCR}.svg"></a>
   <a href=""><img src="https://img.shields.io/github/issues/{SCUT-DLVCLab}/{GPT4OCR}.svg"></a>
-  <a href=""><img src="https://img.shields.io/github/issues-pr/{SCUT-DLVCLab}/{GPT4OCR}.svg"></a>
+  <a href=""><img src="https://img.shields.io/github/issues-pr/{SCUT-DLVCLab}/{GPT4OCR}.svg"></a> -->
 
-[English](README.md) | [简体中文](README.zh-CN.md)
+<!-- [English](README.md) | [简体中文](README.zh-CN.md) -->
 <br>
 
 This repository evaluates the performance of GPT-4V(ision) on various OCR-related tasks. 
