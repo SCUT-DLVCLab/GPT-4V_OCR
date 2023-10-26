@@ -80,7 +80,7 @@ Table Structure Recognition(TSR) aims to recognize the cellular structures of ta
 </div>
 
 ## Citation
-```python
+```
 @misc{shi2023exploring,
       title={Exploring OCR Capabilities of GPT-4V(ision) : A Quantitative and In-depth Evaluation}, 
       author={Yongxin Shi and Dezhi Peng and Wenhui Liao and Zening Lin and Xinhong Chen and Chongyu Liu and Yuyi Zhang and Lianwen Jin},
