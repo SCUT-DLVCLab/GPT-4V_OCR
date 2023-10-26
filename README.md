@@ -81,6 +81,9 @@ Table Structure Recognition(TSR) aims to recognize the cellular structures of ta
 
 </div>
 
+## Data Download
+- [Google Drive](https://drive.google.com/file/d/1V3kW01k0ZDbEH6cnhBLWEVlnmIEHN72J/view?usp=drive_link)
+- [Baidu Drive(6wyf)](https://pan.baidu.com/s/1qJvphPgtVIwGatRsqlSc7Q?pwd=6wyf)
 ## Citation
 ```
 @misc{shi2023exploring,
