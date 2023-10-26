@@ -1,4 +1,4 @@
-# GPT4OCR
+# GPT-4V_OCR
 
 <div align="center">
   <p>
@@ -18,7 +18,12 @@
 
 <br>
 
-This repository evaluates the performance of GPT-4V(Vision) on various OCR-related tasks.  Please see the corresponding [paper](https://arxiv.org/abs/2310.16809) for more details.
+<!-- This repository evaluates the performance of GPT-4V(ision) on various OCR-related tasks for our paper [Exploring OCR Capabilities of GPT-4V(ision) : A Quantitative and In-depth Evaluation](https://arxiv.org/abs/2310.16809). 
+Please see the corresponding [paper](https://arxiv.org/abs/2310.16809) for more details. -->
+
+### [[arXiv 2310.16809]](https://arxiv.org/abs/2310.16809)Exploring OCR Capabilities of GPT-4V(ision) : A Quantitative and In-depth Evaluation
+This paper presents a comprehensive evaluation of the Optical Character Recognition (OCR) capabilities of the recently released GPT-4V(ision), a Large Multimodal Model (LMM). We assess the model's performance across a range of OCR tasks, including scene text recognition, handwritten text recognition, handwritten mathematical expression recognition, table structure recognition, and information extraction from visually-rich document. The evaluation reveals that GPT-4V performs well in recognizing and understanding Latin contents, but struggles with multilingual scenarios and complex tasks. Based on these observations, we delve deeper into the necessity of specialized OCR models and deliberate on the strategies to fully harness the pretrained general LMMs like GPT-4V for OCR downstream tasks. The study offers a critical reference for future research in OCR with LMMs. 
+<!-- Evaluation pipeline and results are available at this [https URL](https://github.com/SCUT-DLVCLab/GPT-4V_OCR). -->
 
 <!-- <div>
     <a href=""><img src="https://img.shields.io/badge/-Run on gradio-orange" alt="gradio"></a>
@@ -76,7 +81,7 @@ Table Structure Recognition(TSR) aims to recognize the cellular structures of ta
 </div>
 
 ## Citation
-```python
+```
 @misc{shi2023exploring,
       title={Exploring OCR Capabilities of GPT-4V(ision) : A Quantitative and In-depth Evaluation}, 
       author={Yongxin Shi and Dezhi Peng and Wenhui Liao and Zening Lin and Xinhong Chen and Chongyu Liu and Yuyi Zhang and Lianwen Jin},
