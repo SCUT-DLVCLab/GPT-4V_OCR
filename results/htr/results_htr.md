@@ -41,8 +41,8 @@
             <td>Supervised-SOTA</td>
             <td>8.29%</td>
             <td>2.89%</td>
-            <td>6.52%</td>
             <td>21.47%</td>
+            <td>6.52%</td>
         </tr>
     </table>
 
