@@ -18,7 +18,7 @@
 
 <br>
 
-This repository evaluates the performance of GPT-4V(ision) on various OCR-related tasks. 
+This repository evaluates the performance of GPT-4V(Vision) on various OCR-related tasks.  Please see the corresponding [paper](https://arxiv.org/abs/2310.16809) for more details.
 
 <!-- <div>
     <a href=""><img src="https://img.shields.io/badge/-Run on gradio-orange" alt="gradio"></a>
@@ -74,3 +74,15 @@ Table Structure Recognition(TSR) aims to recognize the cellular structures of ta
 <!-- <h2>Layout Analysis</h2> -->
 
 </div>
+
+## Citation
+```python
+@misc{shi2023exploring,
+      title={Exploring OCR Capabilities of GPT-4V(ision) : A Quantitative and In-depth Evaluation}, 
+      author={Yongxin Shi and Dezhi Peng and Wenhui Liao and Zening Lin and Xinhong Chen and Chongyu Liu and Yuyi Zhang and Lianwen Jin},
+      year={2023},
+      eprint={2310.16809},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
