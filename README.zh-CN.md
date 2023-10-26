@@ -48,7 +48,7 @@
 
 <div>
     <a href="results/vie/result_vie.md"><img src="https://img.shields.io/badge/评测结果-🗒️-blue" alt="results_vie"></a>
-    <!-- <a href="scr/src_vie.md"><img src="https://img.shields.io/badge/评测方案-🎚️-purple" alt="src_vie"></a> -->
+    <a href="src/vie/parse_kv.py"><img src="https://img.shields.io/badge/评测脚本- 🛠️-blue" alt="results_vie"></a>
     <a href="https://github.com/SCUT-DLVCLab/Document-AI-Recommendations/tree/main"><img src="https://img.shields.io/badge/资源整理-🧷-orange" alt="recommendations_vie"></a>
 </div>
 <div align="left">

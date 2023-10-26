@@ -395,21 +395,6 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    # # ! For debugging ##
-    # import dataclasses
-
-    # @dataclasses.dataclass
-    # class DebugArgs:
-    #     dir_orig: str = "results/vie/private_XFUNDzh_res.json"
-    #     dir_gt_kv: str = "private_eval/FUNSD/zh.val.kv.json"
-    #     dir_rename: str = "private_eval/FUNSD/XFUNDzh_rename.txt"
-    #     dir_orig: str = "results/vie/private_FUNSD_res.json"
-    #     dir_gt_kv: str = "private_eval/FUNSD/en.val.kv.json"
-    #     dir_rename: str = "private_eval/FUNSD/FUNSD_rename.txt"
-
-    # args = DebugArgs()
-    # # ! For debugging ##
-
     if args.dir_rename != "null":
         with open(args.dir_rename, "r", encoding="utf-8") as f:
             rename_lines = f.readlines()
